@@ -25,12 +25,13 @@
 <body>
 
 <h1>Datenschutzerklärung</h1>
-<p class="meta">Zuletzt aktualisiert: Juni 2026 · Version 1.2</p>
+<p class="meta">Zuletzt aktualisiert: Juni 2026 · Version 1.3</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
     Lukas Gatzen<br>
-    E-Mail: <a href="mailto:stadien.epsilon.9i@icloud.com">stadien.epsilon.9i@icloud.com</a>
+    E-Mail: <a href="mailto:stadien.epsilon.9i@icloud.com">stadien.epsilon.9i@icloud.com</a><br>
+    <a href="impressum.html">Impressum</a>
 </p>
 
 <h2>2. Grundsatz</h2>
@@ -42,11 +43,20 @@
 <p>
     Beim ersten Start der App wirst du um deine ausdrückliche Einwilligung zur Verarbeitung deiner
     Daten gemäß dieser Datenschutzerklärung gebeten. Die Nutzung der App ist ohne diese Einwilligung
-    nicht möglich. Du kannst deine Einwilligung jederzeit widerrufen, indem du die App deinstallierst
-    und deine iCloud-Daten löschst.
+    nicht möglich. Du kannst deine Einwilligung jederzeit widerrufen, indem du dein Konto in der App
+    löschst oder die App deinstallierst.
 </p>
 
-<h2>3. Erhobene Daten</h2>
+<h2>3. Rechtsgrundlage der Verarbeitung</h2>
+<p>
+    Die Verarbeitung deiner personenbezogenen Daten erfolgt auf folgenden Rechtsgrundlagen:
+</p>
+<ul>
+    <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> – soweit die Verarbeitung zur Bereitstellung der App-Funktionen erforderlich ist (z.&nbsp;B. Speichern von Party-Daten, Synchronisierung mit anderen Mitgliedern).</li>
+    <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> – soweit du beim ersten App-Start ausdrücklich in die Verarbeitung eingewilligt hast (z.&nbsp;B. optionales Profilbild, Bio).</li>
+</ul>
+
+<h2>4. Erhobene Daten</h2>
 <p>ShowUp erhebt ausschließlich Daten, die du selbst eingibst:</p>
 <ul>
     <li>Vor- und Nachname sowie Benutzername (für dein Profil)</li>
@@ -56,33 +66,55 @@
     <li>Chat-Nachrichten innerhalb von Parties</li>
     <li>Fotos, die du während einer Party aufnimmst oder hochlädst</li>
 </ul>
-<p>Es werden <strong>keine</strong> Standortdaten, Kontakte oder sonstigen Gerätedaten erhoben.</p>
+<p>Es werden <strong>keine</strong> Standortdaten, Gerätekennungen, Kontakte oder sonstigen Gerätedaten erhoben.</p>
+<p>
+    Die App speichert außerdem Profildaten anderer ShowUp-Nutzer (Benutzername, Anzeigename, Profilbild)
+    temporär lokal auf deinem Gerät, um Namen und Avatare in der App anzeigen zu können. Diese Daten
+    werden beim Löschen deines Kontos oder bei Deinstallation der App vollständig entfernt.
+</p>
 
-<h2>4. Datenspeicherung</h2>
+<h2>5. Datenspeicherung</h2>
 <p>Deine Daten werden an folgenden Orten gespeichert:</p>
 <ul>
-    <li><strong>Lokal auf deinem Gerät</strong> – Party-Daten, Profil und Fotos werden primär lokal gespeichert.</li>
-    <li><strong>iCloud (CloudKit) – Party-Daten</strong> – Party-Informationen (Name, Datum, Ort, Mitglieder, Chats) werden zur Synchronisierung in der CloudKit-Datenbank der App gespeichert. Zugriff haben ausschließlich Mitglieder der jeweiligen Party. Es handelt sich um Apples iCloud-Infrastruktur; die Datenschutzbestimmungen von Apple gelten entsprechend: <a href="https://www.apple.com/de/legal/privacy/" target="_blank">apple.com/de/legal/privacy</a></li>
-    <li><strong>iCloud (CloudKit) – Profildaten</strong> – Dein Benutzername, dein Anzeigename und deine Bio werden in einer öffentlich durchsuchbaren CloudKit-Datenbank gespeichert. Dies ist notwendig, damit andere ShowUp-Nutzer dich für Party-Einladungen finden können. Du kannst diese Daten jederzeit in der App ändern oder durch das Löschen deines Kontos entfernen.</li>
-    <li><strong>Peer-to-Peer (lokal)</strong> – Party-Daten und Fotos können über das lokale Netzwerk direkt zwischen Geräten synchronisiert werden (MultipeerConnectivity). Dabei werden keine Daten an externe Server übertragen.</li>
+    <li>
+        <strong>Lokal auf deinem Gerät</strong> – Party-Daten, Profil und Fotos werden primär lokal
+        gespeichert (App-Speicher und Fotoverzeichnis).
+    </li>
+    <li>
+        <strong>Apple CloudKit – Party-Daten</strong> – Party-Informationen (Name, Datum, Ort,
+        Mitglieder, Chats) werden zur Synchronisierung in Apples CloudKit gespeichert. Die Daten
+        werden serverseitig so abgefragt, dass nur Mitglieder der jeweiligen Party Zugriff erhalten.
+        Grundlage ist Apples iCloud-Infrastruktur; die Datenschutzbestimmungen von Apple gelten
+        entsprechend:
+        <a href="https://www.apple.com/de/legal/privacy/" target="_blank">apple.com/de/legal/privacy</a>
+    </li>
+    <li>
+        <strong>Apple CloudKit – Profildaten</strong> – Dein Benutzername, dein Anzeigename und
+        deine Bio werden in CloudKit gespeichert, damit andere ShowUp-Nutzer dich für
+        Party-Einladungen finden können. Diese Daten sind für andere App-Nutzer im Rahmen der
+        Suchfunktion sichtbar und werden beim Löschen deines Kontos aus CloudKit entfernt.
+    </li>
+    <li>
+        <strong>Peer-to-Peer (lokal)</strong> – Party-Daten und Fotos können über das lokale
+        Netzwerk direkt zwischen Geräten synchronisiert werden (Apple MultipeerConnectivity,
+        verschlüsselt). Dabei werden keine Daten an externe Server übertragen.
+    </li>
 </ul>
 
-<h2>5. Datenweitergabe</h2>
+<h2>6. Datenweitergabe</h2>
 <p>
     Wir geben deine Daten <strong>nicht</strong> an Dritte weiter. Es gibt keine Werbung, kein Tracking,
     keine Analyse-Tools und keine externen Server außer Apples iCloud.
 </p>
 
-<h2>6. Kalender-Zugriff</h2>
+<h2>7. Kalender- und Kamera-Zugriff</h2>
 <p>
     ShowUp kann Party-Termine in deinen Kalender eintragen, wenn du dies ausdrücklich genehmigst.
-    Es werden ausschließlich Schreibzugriffe für den jeweiligen Termin durchgeführt.
-    Bestehende Kalendereinträge werden nicht gelesen.
+    Es werden ausschließlich Schreibzugriffe für den jeweiligen Termin durchgeführt;
+    bestehende Kalendereinträge werden nicht gelesen.
 </p>
-
-<h2>7. Kamera-Zugriff</h2>
 <p>
-    ShowUp verwendet die Kamera ausschließlich zum Aufnehmen von Fotos während einer Party,
+    Die Kamera wird ausschließlich zum Aufnehmen von Fotos während einer Party verwendet,
     wenn du dies aktiv auslöst. Fotos werden lokal gespeichert und können per P2P mit anderen
     Party-Mitgliedern geteilt werden.
 </p>
@@ -90,38 +122,52 @@
 <h2>8. Deine Rechte (DSGVO)</h2>
 <p>Du hast das Recht auf:</p>
 <ul>
-    <li><strong>Auskunft</strong> – welche Daten über dich gespeichert sind</li>
-    <li><strong>Berichtigung</strong> – fehlerhafte Daten korrigieren</li>
-    <li><strong>Löschung</strong> – deine Daten löschen lassen</li>
-    <li><strong>Datenportabilität</strong> – deine Daten in einem gängigen Format erhalten</li>
+    <li><strong>Auskunft</strong> (Art. 15) – welche Daten über dich gespeichert sind</li>
+    <li><strong>Berichtigung</strong> (Art. 16) – fehlerhafte Daten korrigieren</li>
+    <li><strong>Löschung</strong> (Art. 17) – deine Daten vollständig löschen lassen</li>
+    <li><strong>Datenportabilität</strong> (Art. 20) – deine Daten in einem gängigen Format erhalten</li>
+    <li><strong>Widerspruch</strong> (Art. 21) – der Verarbeitung widersprechen</li>
 </ul>
 <p>
-    Da alle Daten lokal auf deinem Gerät bzw. in deinem eigenen iCloud-Account liegen,
-    kannst du sie jederzeit selbst löschen: App deinstallieren entfernt alle lokalen Daten.
-    iCloud-Daten löschst du über die iCloud-Einstellungen deines Geräts.
+    Du kannst dein Konto und alle damit verbundenen Daten direkt in der App löschen
+    (Profil → Konto löschen). Dabei werden alle lokalen Daten, deine Profildaten in CloudKit
+    sowie deine eigenen Parties aus CloudKit dauerhaft entfernt.
+    Für darüber hinausgehende Anfragen wende dich an:
+    <a href="mailto:stadien.epsilon.9i@icloud.com">stadien.epsilon.9i@icloud.com</a>
 </p>
 
-<h2>9. Datensicherheit</h2>
+<h2>9. Beschwerderecht</h2>
 <p>
-    Die App nutzt keine eigenen Server. Alle Daten liegen auf deinem Gerät oder in deinem
-    persönlichen iCloud-Account, der durch deine Apple ID gesichert ist.
+    Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung
+    deiner personenbezogenen Daten zu beschweren (Art. 13 Abs. 2 lit. d DSGVO).
+    Zuständige Behörde ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA):<br>
+    Promenade 27, 91522 Ansbach<br>
+    <a href="https://www.lda.bayern.de" target="_blank">www.lda.bayern.de</a>
 </p>
 
-<h2>10. Kinder</h2>
+<h2>10. Datensicherheit</h2>
+<p>
+    Die App nutzt keine eigenen Server. Alle Daten liegen auf deinem Gerät oder werden über
+    Apples iCloud-Infrastruktur synchronisiert, die durch deine Apple ID und Apples
+    Sicherheitsmechanismen geschützt ist. Die P2P-Synchronisierung erfolgt verschlüsselt.
+</p>
+
+<h2>11. Kinder</h2>
 <p>
     ShowUp richtet sich nicht gezielt an Kinder unter 13 Jahren. Wir erheben wissentlich keine
     personenbezogenen Daten von Kindern.
 </p>
 
-<h2>11. Änderungen dieser Datenschutzerklärung</h2>
+<h2>12. Änderungen dieser Datenschutzerklärung</h2>
 <p>
     Änderungen werden auf dieser Seite veröffentlicht. Das Datum der letzten Aktualisierung
     ist oben angegeben.
 </p>
 
-<h2>12. Kontakt</h2>
+<h2>13. Kontakt</h2>
 <p>
-    Bei Fragen zum Datenschutz erreichst du uns über den Support-Link im App Store.
+    Bei Fragen zum Datenschutz erreichst du uns über den Support-Link im App Store oder direkt
+    per E-Mail: <a href="mailto:stadien.epsilon.9i@icloud.com">stadien.epsilon.9i@icloud.com</a>
 </p>
 
 </body>
