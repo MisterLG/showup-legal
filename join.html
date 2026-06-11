@@ -95,11 +95,24 @@
             const deepLink = 'showup://join/' + partyId;
             document.getElementById('btn-open').href = deepLink;
 
+            // Party-ID in Zwischenablage legen – ShowUp liest sie beim ersten Start
+            // (Fallback für Erstinstall: App-Store-Download → App öffnen → Party-ID gefunden)
+            try {
+                navigator.clipboard.writeText('showup-party:' + partyId).catch(() => {});
+            } catch (e) {}
+
             // Automatisch versuchen, die App zu öffnen
             setTimeout(() => {
                 window.location.href = deepLink;
             }, 300);
         }
+
+        // "Im App Store laden"-Button: Party-ID auch per Legacy-Clipboard sichern
+        document.getElementById('btn-store').addEventListener('click', () => {
+            try {
+                navigator.clipboard.writeText('showup-party:' + partyId).catch(() => {});
+            } catch (e) {}
+        });
     </script>
 </body>
 </html>
