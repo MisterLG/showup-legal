@@ -25,7 +25,7 @@
 <body>
 
 <h1>Datenschutzerklärung</h1>
-<p class="meta">Zuletzt aktualisiert: Juni 2026 · Version 1.5</p>
+<p class="meta">Zuletzt aktualisiert: Juni 2026 · Version 1.2</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
@@ -104,9 +104,12 @@
         Suchfunktion sichtbar und werden beim Löschen deines Kontos aus CloudKit entfernt.
     </li>
     <li>
-        <strong>Peer-to-Peer (lokal)</strong> – Party-Daten und Fotos können über das lokale
-        Netzwerk direkt zwischen Geräten synchronisiert werden (Apple MultipeerConnectivity,
-        verschlüsselt). Dabei werden keine Daten an externe Server übertragen.
+        <strong>Apple CloudKit – Fotos</strong> – Fotos, die du in einer Party aufnimmst, werden
+        in Apples öffentlicher CloudKit-Datenbank gespeichert und sind für alle Mitglieder der
+        jeweiligen Party sichtbar. Die Fotos sind technisch über die Party-ID abrufbar; ein
+        unbefugter Zugriff setzt die Kenntnis der zufällig generierten Party-ID voraus.
+        Fotos werden beim Verlassen oder Löschen einer Party nicht automatisch aus CloudKit
+        entfernt; der Party-Besitzer kann einzelne Fotos jederzeit löschen.
     </li>
 </ul>
 
@@ -124,8 +127,8 @@
 </p>
 <p>
     Die Kamera wird ausschließlich zum Aufnehmen von Fotos während einer Party verwendet,
-    wenn du dies aktiv auslöst. Fotos werden lokal gespeichert und können per P2P mit anderen
-    Party-Mitgliedern geteilt werden.
+    wenn du dies aktiv auslöst. Fotos werden lokal gespeichert und über Apples CloudKit
+    automatisch mit allen Mitgliedern der jeweiligen Party synchronisiert.
 </p>
 
 <h2>8. Push-Benachrichtigungen</h2>
@@ -173,16 +176,17 @@
 <p>
     Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung
     deiner personenbezogenen Daten zu beschweren (Art. 13 Abs. 2 lit. d DSGVO).
-    Zuständige Behörde ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA):<br>
-    Promenade 27, 91522 Ansbach<br>
-    <a href="https://www.lda.bayern.de" target="_blank">www.lda.bayern.de</a>
+    Zuständige Behörde ist die Landesbeauftragte für Datenschutz und Informationsfreiheit
+    Nordrhein-Westfalen (LDI NRW):<br>
+    Kavalleriestr. 2–4, 40213 Düsseldorf<br>
+    <a href="https://www.ldi.nrw.de" target="_blank">www.ldi.nrw.de</a>
 </p>
 
 <h2>11. Datensicherheit</h2>
 <p>
     Die App nutzt keine eigenen Server. Alle Daten liegen auf deinem Gerät oder werden über
     Apples iCloud-Infrastruktur synchronisiert, die durch deine Apple ID und Apples
-    Sicherheitsmechanismen geschützt ist. Die P2P-Synchronisierung erfolgt verschlüsselt.
+    Sicherheitsmechanismen geschützt ist.
 </p>
 
 <h2>12. Kinder</h2>
